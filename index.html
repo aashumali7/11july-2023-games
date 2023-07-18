@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Class</title> 
+    </head>
+    <body>
+        <script>
+            //1. define the class 
+
+            // class name should always be return in PascalCase
+            class OkDone{
+                //1. p:v
+                st1='';
+                st2='';
+                st3='';
+
+                //2.Constructor is a special function/method
+               constructor(s1,s2,s3){
+                 // the role of constructor is to initialize the properties
+                 // Left = Right
+                  this.st1 =s1;
+                  this.st2 =s2;
+                  this.st3 =s3;
+                  // this is an internal object
+               } 
+              //3. Method/function
+                myStudent(){
+                    console.log('hey'+this.st1+this.st2+this.st3);
+                }
+            }
+            //2. create class object
+            // let classObject = new ClassName();
+            //class instantiation
+            students = new OkDone("aashu",'kavi',`aashish`); // parameters
+            // students is a external class object
+
+            // classObject.member
+            students.myStudent();
+            
+
+        </script>
+    </body>
+</html>             
